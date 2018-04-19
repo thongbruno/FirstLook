@@ -7,4 +7,9 @@ import { Component } from '@angular/core'
 
 export class ServerComponent{
     serverName: string = 'A1';
+    serverStatus: string = 'offline';
+
+    openServer(){
+        this.serverStatus = 'online';
+    }
 }
